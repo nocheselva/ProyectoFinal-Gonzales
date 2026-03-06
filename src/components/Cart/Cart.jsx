@@ -1,20 +1,24 @@
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
-import "./Cart.css"; // <--- IMPORTANTE: Conecta tu estilo aquí
+import "./Cart.css"; 
 
 const Cart = () => {
     const { cart, clearCart, removeItem, total } = useContext(CartContext);
 
+
     if (cart.length === 0) {
         return (
             <div className="container text-center mt-5 cart-container">
-                <h1 className="display-5">El carrito de Emma está vacío 🐾</h1>
+                <h1 className="display-5">El carrito está vacío</h1>
                 <p className="empty-cart-msg">¿Aún no has elegido nada para tu peludito?</p>
-                <Link to="/" className="btn btn-primary mt-3">Volver a la tienda</Link>
+                <Link to="/" className="btn btn-primary mt-3">
+                    Volver a la tienda
+                </Link>
             </div>
         );
     }
+
 
     return (
         <div className="container mt-5 cart-container">
@@ -35,9 +39,17 @@ const Cart = () => {
             </div>
 
             <div className="mt-4 text-end total-section shadow-sm">
-                <h2 className="mb-3">Total a pagar: <span className="text-success">S/ {total}</span></h2>
-                <button className="btn btn-secondary me-3" onClick={clearCart}>Vaciar Carrito</button>
-                <Link to="/checkout" className="btn btn-success px-4 fw-bold">Finalizar Compra</Link>
+                {}
+                <h2 className="mb-3">Total a pagar: <span style={{color: '#22B573'}}>S/ {total}</span></h2>
+                
+                <button className="btn btn-secondary me-3" onClick={clearCart}>
+                    Vaciar Carrito
+                </button>
+                
+                {}
+                <Link to="/checkout" className="btn btn-primary px-4 fw-bold">
+                    Finalizar Compra
+                </Link>
             </div>
         </div>
     );

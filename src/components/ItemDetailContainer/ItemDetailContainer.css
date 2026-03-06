@@ -14,7 +14,7 @@
   border-radius: 15px;
   padding: 30px;
   display: flex;
-  flex-direction: row; /* Foto al lado del texto en PC */
+  flex-direction: row; 
   gap: 40px;
   max-width: 900px;
   width: 100%;
@@ -47,13 +47,13 @@
   margin: 15px 0;
 }
 
-/* --- RESPONSIVO (Tablets y Celulares) --- */
+
 @media (max-width: 768px) {
   .item-detail-card {
-    flex-direction: column; /* Foto arriba, texto abajo */
+    flex-direction: column; 
     padding: 20px;
     align-items: center;
-    text-align: center; /* Centramos el texto en móviles */
+    text-align: center; 
   }
 
   .item-detail-img {
@@ -61,11 +61,11 @@
   }
 }
 
-/* Estilo para integrar el contador dentro del detalle */
+
 .item-detail-info .counter-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinea a la izquierda en PC */
+    align-items: flex-start; 
     gap: 15px;
     margin-top: 20px;
     width: 100%;

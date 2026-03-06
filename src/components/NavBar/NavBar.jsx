@@ -4,7 +4,7 @@ import CartWidget from '../CartWidget/CartWidget';
 import logo from '../../assets/logo.png'; 
 import './NavBar.css';
 
-// 1. YA NO recibimos props (cartCount), lo quitamos de los paréntesis
+
 const NavBar = () => {
   return (
     <nav className="navbar">
@@ -33,7 +33,7 @@ const NavBar = () => {
         </li>
       </ul>
 
-      {/* 2. El CartWidget ya no necesita recibir nada por aquí */}
+      {}
       <CartWidget />
     </nav>
   );

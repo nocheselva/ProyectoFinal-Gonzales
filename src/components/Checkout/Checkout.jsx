@@ -25,7 +25,7 @@ const Checkout = () => {
         e.preventDefault();
         setLoading(true);
 
-        // Creamos el objeto de la orden
+      
         const order = {
             buyer: formData,
             items: cart,
@@ -36,7 +36,7 @@ const Checkout = () => {
         try {
             const docRef = await addDoc(collection(db, "orders"), order);
             setOrderId(docRef.id);
-            clearCart(); // Vaciamos el carrito después de comprar
+            clearCart(); 
         } catch (error) {
             console.error("Error al generar la orden:", error);
         } finally {
@@ -44,7 +44,7 @@ const Checkout = () => {
         }
     };
 
-    if (loading) return <h2>Generando tu orden... 🐾</h2>;
+    if (loading) return <h2>Generando tu orden... </h2>;
 
     if (orderId) {
         return (

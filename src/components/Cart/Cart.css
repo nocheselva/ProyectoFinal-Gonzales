@@ -1,4 +1,4 @@
-/* Estilos con la identidad visual de Buscadog */
+
 .cart-container {
     background-color: #ffffff;
     border-radius: 15px;
@@ -10,7 +10,7 @@
 .cart-title {
     color: #333;
     font-weight: 700;
-    border-bottom: 3px solid #22B573; /* Tu color de marca */
+    border-bottom: 3px solid #22B573; 
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -18,9 +18,9 @@
 .cart-item-card {
     transition: all 0.3s ease;
     border-radius: 12px;
-    border-left: 6px solid #22B573; /* Detalle de marca */
+    border-left: 6px solid #22B573; 
     margin-bottom: 15px;
-    background-color: #f9fdfb; /* Un toque sutil del verde de fondo */
+    background-color: #f9fdfb; 
 }
 
 .cart-item-card:hover {

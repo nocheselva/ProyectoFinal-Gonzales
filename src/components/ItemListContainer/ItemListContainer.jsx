@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom'; 
 import './ItemListContainer.css';
 
-// 1. IMPORTAMOS LAS HERRAMIENTAS DE FIREBASE
+
 import { db } from '../../services/firebaseConfig'; 
 import { collection, getDocs, query, where } from 'firebase/firestore';
 
@@ -37,7 +37,7 @@ const ItemListContainer = ({ greeting }) => {
   }, [categoryId]);
 
   if (loading) {
-    return <h2 style={{textAlign: 'center', marginTop: '50px'}}>Cargando productos de la selva...</h2>;
+    return <h2 style={{textAlign: 'center', marginTop: '50px'}}>Cargando productos...</h2>;
   }
 
   return (

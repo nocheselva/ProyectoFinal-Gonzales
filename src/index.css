@@ -1,51 +1,59 @@
-/* 1. Fuente y Reseteo General */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', 'Poppins', sans-serif; /* Fuentes modernas para e-commerce */
-}
+  font-family: 'Montserrat', 'Poppins', sans-serif; 
 
-/* 2. Colores de Marca y Fondo */
+/
 body {
-  background-color: #f8f9fa; /* Un gris muy claro para que resalten los productos */
+  background-color: #f8f9fa; 
   color: #333;
   line-height: 1.6;
 }
 
-/* 3. Estilos para los Títulos */
+
 h1, h2, h3 {
   color: #2c3e50;
   margin-bottom: 1rem;
   text-align: center;
 }
 
-/* 4. Botones Globales (Para no repetir código en cada componente) */
 .btn-primary {
   display: inline-block;
-  background-color: #ff9f43; /* Un naranja vibrante, ideal para mascotas */
-  color: white;
+  background-color: #22B573 !important; 
+  color: white !important;
   padding: 10px 20px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  border: none;
+  border: none !important;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: center;
 }
+
 
 .btn-primary:hover {
-  background-color: #ee5253; /* Cambia a un tono más fuerte al pasar el mouse */
+  background-color: #20c997 !important; 
+  color: white !important;
 }
 
-/* 5. Contenedores de las Vistas */
+.btn-primary:active, 
+.btn-primary:focus {
+  background-color: #E3B04B !important; 
+  transform: scale(0.98); 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2) !important;
+}
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
-/* 6. Utilidades para el Carrito y Checkout */
+
 .text-center {
   text-align: center;
 }

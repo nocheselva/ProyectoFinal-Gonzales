@@ -1,4 +1,4 @@
-// src/services/firebaseConfig.js
+
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
@@ -13,8 +13,8 @@ const firebaseConfig = {
 };
 
 
-// Inicializamos Firebase
+
 const app = initializeApp(firebaseConfig);
 
-// Exportamos la base de datos para usarla en los componentes
+
 export const db = getFirestore(app);

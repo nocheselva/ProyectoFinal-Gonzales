@@ -4,7 +4,6 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Cart from './components/Cart/Cart'; 
 
-// 1. IMPORTA EL COMPONENTE CHECKOUT
 import Checkout from './components/Checkout/Checkout'; 
 
 import { CartProvider } from './context/CartContext.jsx';
@@ -22,7 +21,7 @@ function App() {
           <Route path="/item/:itemId" element={<ItemDetailContainer />} />
           <Route path="/cart" element={<Cart />} /> 
           
-          {/* 2. REEMPLAZAMOS EL DIV POR EL COMPONENTE CHECKOUT REAL */}
+          {}
           <Route path="/checkout" element={<Checkout />} /> 
           
           <Route path="*" element={<h1>404 - Not Found</h1>} />

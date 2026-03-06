@@ -1,25 +1,24 @@
-/* 1. RESET GENERAL (Para que el padding no rompa nada) */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* 2. CONTENEDOR MAESTRO (Afecta a todas tus vistas) */
-/* Usamos una coma para aplicar lo mismo a ambos contenedores */
+
 .item-list-container, 
 .item-detail-container {
   display: flex;
   flex-direction: column;
-  align-items: center;    /* Centra horizontalmente */
+  align-items: center; 
   width: 100%;
-  max-width: 1200px;      /* Límite para computadoras */
-  margin: 0 auto;         /* Centra el bloque en la pantalla */
-  padding: 40px 20px;     /* Aire a los costados (Margen interno) */
+  max-width: 1200px;     
+  margin: 0 auto;         
+  padding: 40px 20px;     
   min-height: 80vh;
 }
 
-/* 3. TÍTULOS Y TEXTOS */
+
 .greeting-message, 
 .item-detail-container h2 {
   text-align: center;
@@ -28,17 +27,17 @@
   font-family: sans-serif;
 }
 
-/* 4. LA GRILLA DE PRODUCTOS (LISTA) */
+
 .product-list {
   display: grid;
-  /* Esto crea columnas automáticas que se centran solas */
+ 
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   width: 100%;
   justify-items: center; 
 }
 
-/* 5. LAS TARJETAS (CARD) */
+
 .product-card {
   border: 1px solid #dbdbdb;
   border-radius: 12px;
@@ -57,10 +56,10 @@
   border-radius: 8px;
 }
 
-/* 6. EL DETALLE DEL PRODUCTO (Cuando entras a ver uno solo) */
+
 .item-detail {
   display: flex;
-  flex-direction: column; /* Apilado para que sea fácil de centrar */
+  flex-direction: column; 
   align-items: center;
   text-align: center;
   gap: 20px;
@@ -73,14 +72,25 @@
   border-radius: 15px;
 }
 
-/* 7. BOTONES */
+
+
 .btn-primary {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 6px;
-  margin-top: 15px;
-  font-weight: bold;
+  background-color: #22B573 !important; 
+  border-color: #22B573 !important;
+  color: white !important;
+  transition: all 0.3s ease !important;
+}
+
+
+.btn-primary:hover {
+  background-color: #1ba365 !important; 
+  border-color: #1ba365 !important;
+}
+
+
+.btn-primary:active, 
+.btn-primary:focus {
+  background-color: #E3B04B !important; 
+  border-color: #E3B04B !important;
+  box-shadow: 0 0 0 0.25rem rgba(227, 176, 75, 0.25) !important;
 }

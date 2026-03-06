@@ -1,9 +1,9 @@
 .item-list-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra el título y la lista */
+  align-items: center;
   width: 100%;
-  padding: 40px 5%;     /* 5% de margen lateral flexible */
+  padding: 40px 5%;     
   background-color: #f9f9f9;
   box-sizing: border-box;
 }
@@ -17,11 +17,11 @@
 
 .product-list {
   display: grid;
-  /* Grilla responsiva: se ajusta sola de 1 a 4 columnas */
+
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
   width: 100%;
-  max-width: 1200px;   /* Evita que se estire infinito en PC */
+  max-width: 1200px;
   justify-items: center;
 }
 
@@ -40,9 +40,9 @@
 }
 
 .product-img {
-  width: 100%;         /* Ocupa todo el ancho de la card */
-  height: 200px;       /* Altura fija para que todas las cards midan igual */
-  object-fit: cover;   /* No deforma la imagen */
+  width: 100%;        
+  height: 200px;     
+  object-fit: cover; 
   border-radius: 8px;
   margin-bottom: 15px;
 }
@@ -55,11 +55,11 @@
 
 .btn-primary {
   display: block;
-  background-color: #007bff;
+  background-color: #20c997;
   color: white;
   padding: 10px;
   text-decoration: none;
   border-radius: 6px;
   width: 100%;
-  margin-top: auto; /* Empuja el botón siempre al fondo */
+  margin-top: auto; 
 }
