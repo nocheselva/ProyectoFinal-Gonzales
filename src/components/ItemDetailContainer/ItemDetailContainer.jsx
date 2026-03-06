@@ -66,7 +66,7 @@ const ItemDetailContainer = () => {
                     {}
                     {quantityAdded > 0 ? (
                         <Link to="/cart" className="btn-primary" style={{backgroundColor: '#28a745', display: 'block', textAlign: 'center'}}>
-                            Ir al carrito de Emma 🐾
+                            Ir al carrito 
                         </Link>
                     ) : (
                         <ItemCount 
