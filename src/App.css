@@ -1,0 +1,86 @@
+/* 1. RESET GENERAL (Para que el padding no rompa nada) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. CONTENEDOR MAESTRO (Afecta a todas tus vistas) */
+/* Usamos una coma para aplicar lo mismo a ambos contenedores */
+.item-list-container, 
+.item-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* Centra horizontalmente */
+  width: 100%;
+  max-width: 1200px;      /* Límite para computadoras */
+  margin: 0 auto;         /* Centra el bloque en la pantalla */
+  padding: 40px 20px;     /* Aire a los costados (Margen interno) */
+  min-height: 80vh;
+}
+
+/* 3. TÍTULOS Y TEXTOS */
+.greeting-message, 
+.item-detail-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+/* 4. LA GRILLA DE PRODUCTOS (LISTA) */
+.product-list {
+  display: grid;
+  /* Esto crea columnas automáticas que se centran solas */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 100%;
+  justify-items: center; 
+}
+
+/* 5. LAS TARJETAS (CARD) */
+.product-card {
+  border: 1px solid #dbdbdb;
+  border-radius: 12px;
+  padding: 20px;
+  background: white;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* 6. EL DETALLE DEL PRODUCTO (Cuando entras a ver uno solo) */
+.item-detail {
+  display: flex;
+  flex-direction: column; /* Apilado para que sea fácil de centrar */
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  max-width: 600px;
+}
+
+.item-detail img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* 7. BOTONES */
+.btn-primary {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 15px;
+  font-weight: bold;
+}

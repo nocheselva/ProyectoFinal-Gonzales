@@ -1,0 +1,53 @@
+/* Estilos con la identidad visual de Buscadog */
+.cart-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eef2f1;
+}
+
+.cart-title {
+    color: #333;
+    font-weight: 700;
+    border-bottom: 3px solid #22B573; /* Tu color de marca */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.cart-item-card {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    border-left: 6px solid #22B573; /* Detalle de marca */
+    margin-bottom: 15px;
+    background-color: #f9fdfb; /* Un toque sutil del verde de fondo */
+}
+
+.cart-item-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(34, 181, 115, 0.15);
+}
+
+.total-section {
+    background: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px dashed #22B573; 
+    margin-top: 2rem;
+}
+
+.btn-brand {
+    background-color: #22B573 !important;
+    color: white !important;
+    border: none !important;
+    transition: background-color 0.3s;
+}
+
+.btn-brand:hover {
+    background-color: #1a935d !important;
+    filter: brightness(90%);
+}
+
+.text-brand {
+    color: #22B573 !important;
+}

@@ -1,0 +1,79 @@
+.item-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  width: 100%;
+  min-height: 80vh; /* Para que si hay poco texto, no se vea vacío */
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.item-detail-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row; /* Foto al lado del texto en PC */
+  gap: 40px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.item-detail-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.item-detail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-detail-info h1 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.price-detail {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  margin: 15px 0;
+}
+
+/* --- RESPONSIVO (Tablets y Celulares) --- */
+@media (max-width: 768px) {
+  .item-detail-card {
+    flex-direction: column; /* Foto arriba, texto abajo */
+    padding: 20px;
+    align-items: center;
+    text-align: center; /* Centramos el texto en móviles */
+  }
+
+  .item-detail-img {
+    max-width: 100%;
+  }
+}
+
+/* Estilo para integrar el contador dentro del detalle */
+.item-detail-info .counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea a la izquierda en PC */
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Ajuste para que en móviles se vea centrado */
+@media (max-width: 768px) {
+    .item-detail-info .counter-container {
+        align-items: center; /* Se centra en celulares junto con el texto */
+    }
+}

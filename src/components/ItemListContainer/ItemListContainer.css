@@ -1,0 +1,65 @@
+.item-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el título y la lista */
+  width: 100%;
+  padding: 40px 5%;     /* 5% de margen lateral flexible */
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.greeting-message {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+  width: 100%;
+}
+
+.product-list {
+  display: grid;
+  /* Grilla responsiva: se ajusta sola de 1 a 4 columnas */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;   /* Evita que se estire infinito en PC */
+  justify-items: center;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-img {
+  width: 100%;         /* Ocupa todo el ancho de la card */
+  height: 200px;       /* Altura fija para que todas las cards midan igual */
+  object-fit: cover;   /* No deforma la imagen */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.btn-primary {
+  display: block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 6px;
+  width: 100%;
+  margin-top: auto; /* Empuja el botón siempre al fondo */
+}
